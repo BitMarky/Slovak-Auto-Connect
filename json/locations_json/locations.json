@@ -1,0 +1,36 @@
+{
+  "events": [
+    {
+      "location": "Bratislava",
+      "venue": "Bauhaus",
+      "start_time": "22:00",
+      "end_time": "02:00",
+      "bands": ["Jcobs Meets and Ride", "Samaria", "Danubia"],
+      "days": ["Friday", "Saturday"]
+    },
+    {
+      "location": "Nitra",
+      "venue": "METRO",
+      "start_time": "22:00",
+      "end_time": "02:00",
+      "bands": ["Illegal Candy", "Trouble Squad"],
+      "days": ["Friday", "Saturday"]
+    },
+    {
+      "location": "Pezinok",
+      "venue": "Pezinska Baba",
+      "start_time": "22:00",
+      "end_time": "02:00",
+      "bands": ["Slovak Auto Connect"],
+      "days": ["Friday", "Saturday"]
+    },
+    {
+      "location": "Žilina",
+      "venue": "Tesco",
+      "start_time": "22:00",
+      "end_time": "02:00",
+      "bands": ["NightCrawlers", "SkidBoyz"],
+      "days": ["Friday", "Saturday"]
+    }
+  ]
+}
