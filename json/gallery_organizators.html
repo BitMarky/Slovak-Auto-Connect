@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - The People Behind Our Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style_org.css"> <!-- Link to the existing CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> <!-- Lightbox CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+        
+
+</head>
+<body>
+    <header>
+        <!-- Example Header -->
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo/car-logo.png" alt="Logo"></a>
+            </div>
+            <div class="center-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="organizators.html">Organizators</a></li>
+                    <li><a href="racingevents.html">Racing Events</a></li>
+                    <li><a href="carfacts.html">Car Facts</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <a href="partner_with_us.html">Partner With Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <h2>The People Behind Our Events</h2>
+            <p>Hosts, Organizers, and Sponsors</p>
+            <div class="gallery-grid">
+                <!-- Add a link with proper lightbox attributes to ensure lightbox functionality -->
+                <a href="img/organizators/podcast.webp" data-lightbox="gallery" data-title="Podcast Event" class="gallery-item large">
+                    <img src="img/organizators/podcast.webp" alt="Central Event Image"> <!-- Thumbnail -->
+                </a>
+
+                <!-- Smaller supporting images with correct lightbox links -->
+                <a href="img/organizators/host1.jpg" data-lightbox="gallery" data-title="Event Image 1" class="gallery-item">
+                    <img src="img/organizators/host1.jpg" alt="Event Image 1"> <!-- Thumbnail -->
+                </a>
+
+                <a href="img/organizators/osto.jpg" data-lightbox="gallery" data-title="Event Image 2" class="gallery-item">
+                    <img src="img/organizators/osto.jpg" alt="Event Image 2">
+                </a>
+
+                <a href="img/organizators/vikendovky_host.jpg" data-lightbox="gallery" data-title="Event Image 3" class="gallery-item">
+                    <img src="img/organizators/vikendovky_host.jpg" alt="Event Image 3">
+                </a>
+
+                <!-- Ensure more unique gallery items with lightbox functionality -->
+                <a href="img/organizators/sponsors.png" data-lightbox="gallery" data-title="Event Image 4" class="gallery-item">
+                    <img src="img/organizators/sponsors.png" alt="Event Image 4">
+                </a>
+
+                <!-- Add more images with unique sources for proper lightbox navigation -->
+                <a href="img/organizators/slovakiaRing.webp" data-lightbox="gallery" data-title="Event Image 5" class="gallery-item">
+                    <img src="img/organizators/slovakiaRing.webp" alt="Event Image 5">
+                </a>
+
+                <a href="img/organizators/carmeetingsorg.jpg" data-lightbox="gallery" data-title="Event Image 6" class="gallery-item">
+                    <img src="img/organizators/carmeetingsorg.jpg" alt="Event Image 6">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="img/logo/car-logo.png" alt="Logo">
+        </div>
+        
+        <div class="footer-menu">
+            <h3 class="menu-title"><a href="index.html">Company</a></h3>
+            <ul>
+                <li><a href="organizators.html">Organizators</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="racing_events.html">Racing Events</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-subscription">
+            <div class="subscription-title">Subscribe to our newsletter</div>
+            <p>For product announcements and exclusive insights</p>
+            <form action="your-newsletter-signup-endpoint" method="POST">
+                <input type="email" name="email" placeholder="Input your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    
+        <div class="footer-social">
+            <a href="https://twitter.com" target="_blank"><img src="/img/socialmedia/twitter-alt.svg"></a>
+            <a href="https://tiktok.com" target="_blank"><img src="img/socialmedia/tik-tok.svg" alt="TikTok"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="img/socialmedia/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://facebook.com" target="_blank"><img src="img/socialmedia/facebook.svg" alt="Facebook"></a>
+        </div>
+
+        <div class="footer-info">
+            <p>&copy; 2024 Slovak Auto Connect. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

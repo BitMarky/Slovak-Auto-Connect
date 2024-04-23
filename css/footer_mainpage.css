@@ -1,0 +1,121 @@
+
+footer {
+    border-top: black solid 1px;
+    background-color: var(--background); 
+    color: white; 
+    padding: 20px 0; 
+    font-family: 'Manrope', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+}
+
+.footer-logo img {
+    max-width: 40px; 
+    margin-bottom: 20px; 
+    position: relative;
+    right: 49%; 
+    transform: translateX(50%); 
+    border-radius: 18px;
+}
+
+
+.footer-menu,
+.footer-subscription,
+.footer-social,
+.footer-bottom {
+    text-align: center; /* Center align the content */
+    margin-bottom: 20px; /* Space between sections */
+    color: rgb(171, 167, 180);
+}
+
+
+
+.footer-menu h3 {
+    color: rgb(171, 167, 180);
+    font-family: "Lexend";
+    margin: 0; /* Removes default margin from h3 */
+    padding: 10px; /* Removes default padding from h3 */
+    font-size: 1.25em; /* Optional: sets the size of the h3 text */
+}
+
+.footer-menu h3 a {
+    color: inherit; /* Ensures the link color matches the text color of h3 */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+.footer-menu ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-menu li a {
+    font-family: "Manrope";
+    color: rgb(171, 167, 180); /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Space between links */
+}
+
+.footer-subscription input[type="email"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-subscription p{
+    font-size: 13px;
+}
+
+.footer-subscription button {
+    font-family: "Lexend";
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-image: var(--button-gradient); /* Dark background for the button */
+    color: white;
+    cursor: pointer;
+    transition: background-image 0.3s linear, padding 0.3s linear;
+}
+
+.footer-subscription button::hover{
+    background-image: var(--button-hover-gradient);
+}
+.footer-social a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer-social img {
+    width: 24px; /* Size of social icons */
+    height: auto;
+}
+
+.footer-info {
+    margin: 0 auto; /* Pushes the copyright info to the right */
+    font-size: 0.75rem; /* Smaller font size for legal text */
+    border-top: 1px solid #000; /* Light border for the top line */
+    padding-top: 10px; /* Space above the line */
+    justify-content: space-between; /* Space between language and copyright */
+    align-items: center;
+    color: rgb(171, 167, 180);
+}
+
+/* You may want to add media queries to adjust the layout on smaller screens */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column; /* Stack the language and copyright info */
+    }
+
+    .footer-language,
+    .footer-info {
+        margin: 10px 0; /* Vertical space between stacked items */
+    }
+}

@@ -1,0 +1,826 @@
+:root {
+    --background: #1A191DFF;
+    --primary: #6D31ED;  
+    --secondary: #00a8ff;
+    --button-gradient: linear-gradient(to right top, #32BF84, #3299BF);
+    --button-hover-gradient: linear-gradient(to right top, #28A76A, #2878A7);
+    --hover: #32BF84;
+    --text: #ffffff;
+    --text-dark: #222026ff;
+    --card-bg: #333;
+    --btn-bg: #fff;
+    --btn-text: #000;
+    --slider-bg: #1A191DFF;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  body {
+      background-color: var(--background);
+      font-family: "Manrope";
+      color: var(--text);
+      box-sizing: border-box;
+      text-decoration: none;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+  }
+  
+  /* Nav */
+  
+  header {
+      background-color: var(--background);
+      padding: 10px 15px 10px 15px; 
+      
+  } 
+  
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: black solid 1px;
+      padding: 3px;
+      width: 100%;
+  }
+  
+  .logo img {
+      width: 35px;
+      height: 35px;
+      border-radius: 18px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Horizontally center the list items */
+    align-items: center; /* Vertically align the items if needed */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-family: "Lexend";
+    display: inline-block; /* Changed from inline for better control */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 550;
+    position: relative; /* Needed to position the pseudo-element correctly */
+    display: inline-block; /* Ensures the pseudo-element aligns neatly under the link */
+    padding-bottom: 5px;
+    overflow: hidden; /* Ensures the underline does not extend outside the element */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Starts from the center */
+    right: 50%;
+    width: 0; /* Start with no width */
+    height: 3px; /* Height of the underline */
+    background-color: var(--hover); /* Color of the underline */
+    border-radius: 3px; /* Rounds the corners of the pseudo border */
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand to full width */
+    left: 0; /* Start from the very left */
+    right: 0;
+    transform: translateX(0%); /* Reset the transformation on hover */
+}
+
+nav ul li a:hover {
+    color: var(--hover); /* Changes the text color on hover */
+}
+
+nav ul li a.active {
+    color: var(--hover);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the list items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+}
+  
+  .login a {
+    background-image: var(--button-gradient);
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-image 0.3s linear, padding 0.3s linear;
+    display: inline-block;
+    width: auto; /* Adjusted to fit content */
+    font-size: 16px;
+    font-weight: 435;
+    margin: auto 0 6px; /* Adds margin on bottom of the button */
+    cursor: pointer;
+    font-family: "Lexend";
+    }
+    
+    .login a:hover {
+        background-image: var(--button-hover-gradient);;
+      
+    }
+  
+  
+  
+  
+
+  
+/*My Section*/
+
+.hero {
+    position: relative;
+    background-color: #1A191DFF; /* The dark background color from your first image */
+    text-align: center;
+    padding: 50px 20px; /* Adjust the padding to create enough space for your image and text */
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 2; /* Ensures that text is above the image */
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Adjust as needed */
+    margin-bottom: 30px;
+    font-family: "Lexend";
+}
+
+.hero-content p {
+    font-size: 1.2em; /* Adjust as needed */
+    margin-bottom: 30px; /* Adjust as needed */
+    font-family: "Manrope";
+}
+
+/* Styles for the hero image */
+.hero-content .hero-image {
+    /* Existing styles... */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 30px; /* Adds margin below the image */
+    max-width: 100%;
+    width: 1176px; /* Fixed width - ensure this works responsively */
+    height: 299px;
+    z-index: 1;
+}
+
+/* Styles for the CTA button */
+.hero-content .cta-button {
+    /* Existing styles... */
+    background-image: var(--button-gradient);
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-image 0.3s linear, padding 0.3s linear;
+    display: inline-block;
+    width: auto; /* Adjusted to fit content */
+    font-size: 16px;
+    font-weight: 435;
+    margin: auto 0 30px; /* Adds margin on bottom of the button */
+    cursor: pointer;
+    font-family: "Lexend";
+}
+
+.hero-content .cta-button:hover{
+    background-image: var(--button-hover-gradient);
+}
+
+
+/* Card container within each slide */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%; /* Ensure the cards container takes full width */
+  }
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+  }
+
+.nav-button {
+  background-image: var(--button-gradient); /* or any color you prefer */
+  width: 30px; /* Desired size */
+  height: 30px; /* Same as width to create a circle */
+  border-radius: 50%; /* This makes it round */
+  border: none; /* No border for the button */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  cursor: pointer;
+  position: relative; /* For absolute positioning of pseudo-elements, if any */
+  z-index: 10;
+  transition: all 0.3s ease; /* Smooth transition for any changes */
+}
+
+/* If you want to style the Font Awesome icon specifically */
+.nav-button .fas {
+  /* Font Awesome icons inherit font-size and color from the parent by default */
+  /* Add any specific styles for the icon here */
+  font-size: 0.8em; /* 1em will typically be the size of the button's font-size */
+  color: white; /* Example: setting the color of the icon */
+}
+  .nav-button.prev {
+    position: absolute;
+    left: -45px; /* Adjust as needed for spacing */
+  }
+  
+  .nav-button.next {
+    position: absolute;
+    right: -45px; /* Adjust as needed for spacing */
+  }
+  
+
+  /* When any card in .cards is hovered, adjust the button positions */
+  .cards:hover .nav-button.prev {
+    margin-left: -35px; /* Move further to the left */
+  }
+  
+  .cards:hover .nav-button.next {
+    margin-right: -35px; /* Move further to the right */
+  }
+  
+  /* Update the margin for the .nav-button when .cards container is hovered */
+  .cards-container:hover .nav-button.prev {
+    margin-left: -35px; /* Increase the space */
+  }
+  
+  .cards-container:hover .nav-button.next {
+    margin-right: -35px; /* Increase the space */
+  }
+  
+  
+  /* Responsive adjustments for the buttons */
+  @media (max-width: 1200px) {
+    .nav-button.prev, .nav-button.next {
+      position: static; /* Place buttons back into the flow */
+      transform: none; /* Reset transform */
+      margin: 10px 0; /* Add vertical margin for stacked layout */
+    }
+  }
+  
+.cards-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start, which affects the title */
+    gap: 50px; /* Space between the title and the cards */
+    margin: 0 auto 80px; /* Center the cards row */
+    max-width: 1200px; /* Maximum width of the cards container */
+    padding-left: 10px; /* Adjust to align with the card's left margin */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    padding-left: 40px;
+  }
+  
+  .cards-title-hosts,
+  .cards-title-organizers,
+  .cards-title-sponsors {
+    text-decoration: none;
+    font-family: Lexend; /* Heading */
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #96949AFF;
+    margin: 0; /* Reset any margin */
+    padding-left: 10px; /* This should match the card's margin to align the text */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  /* Style for each card */
+  .card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; /* Space between cards */
+    width: 300px; /* Fixed width for each card */
+    color: rgb(171, 167, 180);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    font-family: "Manrope";
+    font-weight: 40;
+  }
+
+  .card h3{
+    font-family: "Lexend";
+    font-weight: 500;
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    background-color: rgba(97, 95, 95, 0.584);
+    transition: background-color 0.3s;
+  }
+  
+  /* Other styles remain unchanged... */
+  
+  /* Adjustments for responsiveness */
+  @media (max-width: 1200px) {
+    .cards-row {
+      padding-left: 10px; /* Adjust this padding to align the titles with the cards */
+    }
+  
+    .cards-title-hosts,
+    .cards-title-organizers,
+    .cards-title-sponsors {
+      padding-left: 10px; /* Adjust this to match the `.card` margin */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .cards-title-hosts,
+    .cards-title-organizers,
+    .cards-title-sponsors {
+      padding-left: 10px; /* This should still match the card's margin */
+    }
+}
+    /* Adjustments for smaller cards or different layouts can go here*/
+
+    footer {
+        border-top: black solid 1px;
+        background-color: var(--background); /* Your current blue background color */
+        color: white; /* For the text color */
+        padding: 20px 0; /* Top and bottom padding */
+        font-family: 'Manrope', sans-serif; /* Assuming you want to keep your font consistent */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .footer-logo {
+        display: flex;
+        justify-content: center; /* Center logo horizontally */
+        align-items: center; /* Center logo vertically */
+        position: relative; /* Relative to its normal position */
+    }
+    
+    .footer-logo img {
+        max-width: 40px; /* Adjust the size of your logo */
+        margin-bottom: 20px; /* Space below the logo */
+        position: relative;
+        right: 49%; /* Start at the middle */
+        transform: translateX(50%); /* Center exactly */
+        border-radius: 18px;
+    }
+    
+
+    .footer-menu,
+    .footer-subscription,
+    .footer-social,
+    .footer-bottom {
+        text-align: center; /* Center align the content */
+        margin-bottom: 20px; /* Space between sections */
+        color: rgb(171, 167, 180);
+    }
+
+
+
+    .footer-menu h3 {
+        color: rgb(171, 167, 180);
+        font-family: "Lexend";
+        margin: 0; /* Removes default margin from h3 */
+        padding: 10px; /* Removes default padding from h3 */
+        font-size: 1.25em; /* Optional: sets the size of the h3 text */
+    }
+    
+    .footer-menu h3 a {
+        color: inherit; /* Ensures the link color matches the text color of h3 */
+        text-decoration: none; /* Removes underline from the link */
+    }
+
+    .footer-menu ul {
+        list-style-type: none; /* Remove bullet points from list */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove default margin */
+    }
+    
+    .footer-menu li a {
+        font-family: "Manrope";
+        color: rgb(171, 167, 180); /* Set link color */
+        text-decoration: none; /* Remove underline from links */
+        margin: 0 10px; /* Space between links */
+    }
+    
+    .footer-subscription input[type="email"] {
+        padding: 10px;
+        margin-top: 10px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .footer-subscription p{
+        font-size: 13px;
+    }
+
+    .footer-subscription button {
+        font-family: "Lexend";
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-image: var(--button-gradient); /* Dark background for the button */
+        color: white;
+        cursor: pointer;
+        transition: background-image 0.3s linear, padding 0.3s linear;
+    }
+    
+    .footer-subscription button::hover{
+        background-image: var(--button-hover-gradient);
+    }
+    .footer-social a {
+        margin: 0 10px; /* Space between icons */
+    }
+    
+    .footer-social img {
+        width: 24px; /* Size of social icons */
+        height: auto;
+    }
+    
+    .footer-info {
+        margin: 0 auto; /* Pushes the copyright info to the right */
+        font-size: 0.75rem; /* Smaller font size for legal text */
+        border-top: 1px solid #000; /* Light border for the top line */
+        padding-top: 10px; /* Space above the line */
+        justify-content: space-between; /* Space between language and copyright */
+        align-items: center;
+        color: rgb(171, 167, 180);
+    }
+    
+    /* You may want to add media queries to adjust the layout on smaller screens */
+    @media (max-width: 768px) {
+        .footer-bottom {
+            flex-direction: column; /* Stack the language and copyright info */
+        }
+    
+        .footer-language,
+        .footer-info {
+            margin: 10px 0; /* Vertical space between stacked items */
+        }
+    }
+
+    #description{
+      height: 380px;
+    }
+
+    .form-options{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .radio-group,
+    .checkbox-group{
+      margin-top: 1rem;
+    }
+
+    .radio-group .radio,
+    .checkbox-group .checkbox{
+      margin-bottom: 0.5rem;
+    }
+
+    div#termsConditionsID{
+      margin-right: 14px;
+    }
+
+    .radio-group{
+      flex-grow: 1;
+    }
+
+    .checkbox-group{
+      flex-grow: 1;
+      text-align: right;
+    }
+
+    .form-group label{
+      display: block;
+      margin-bottom: 0.5em;
+      font-family: "Manrope";
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 1rem; /* Adjust this value as needed */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: "Manrope";
+    }
+  
+    .form-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .form-container h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+  
+  .form-instruction {
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+  
+  .form-group {
+      margin-bottom: 1rem;
+  }
+  
+  .form-row {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .form-row .form-group {
+      width: 48%;
+  }
+  
+  .checkboxes {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+  }
+
+  .radio-options label,
+  .checkboxes label {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+  
+  .radio {
+      margin-bottom: 1rem;
+  }
+  
+  .radio-options {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-top: .5rem;
+  }
+  
+  .radio-options input[type="radio"],
+  .checkboxes input[type="checkbox"] {
+      margin-top: 0;
+      vertical-align: middle;
+  }
+  
+  .submit-button {
+      display: block;
+      margin: 1rem auto;
+      padding: 10px 20px;
+      width: auto;
+      padding: 1rem;
+      border: none;
+      background-image: var(--button-gradient);
+      color: var(--text);
+      cursor: pointer;
+      border-radius: 50px;
+      font-size: 1rem;
+      transition: background-image 0.3s linear, padding 0.3s linear;
+      font-family: "Lexend";
+  }
+
+  .submit-button:hover{
+    background-image: var(--button-hover-gradient);
+  }
+
+  .form-container h1{
+    font-family: "Lexend";
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .form-options{
+        flex-direction: column;
+      }
+      .checkbox-group{
+        text-align: left;
+      }
+      .form-row {
+          flex-direction: column;
+      }
+  
+      .form-row .form-group {
+          width: 100%;
+      }
+
+  }
+  
+  
+  .checkbox input[type='checkbox'] {
+    display: none;
+  }
+  
+  .checkbox label {
+    position: relative;
+    padding-left: 25px; /* Adjusts spacing between the checkbox and text */
+    cursor: pointer;
+  }
+  
+  .checkbox label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+  }
+  
+  .checkbox input[type='checkbox']:checked + label::before {
+    background-color: #ff6700;
+    border-color: #ff6700;
+  }
+  
+  .checkbox input[type='checkbox']:checked + label::after {
+    content: '✓';
+    position: absolute;
+    top: 0px; /* Adjusted to align checkmark within the box */
+    left: 3px; /* Adjusted for alignment */
+    font-size: 12px; /* Ensures checkmark is visible */
+    color: #fff;
+  }
+  
+
+  .radio input[type='radio'] {
+    display: none;
+  }
+  
+  .radio label {
+    position: relative;
+    padding-left: 25px; /* Adjusts spacing */
+    cursor: pointer;
+  }
+  
+  .radio label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+  }
+  
+  .radio input[type='radio']:checked + label::before {
+    background-color: #ff6700;
+    border-color: #ff6700;
+  }
+  
+  .radio input[type='radio']:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 4px; /* Centers the inner white circle */
+    left: 4px; /* Ensures proper alignment */
+    width: 8px; /* Ensures it's visibly centered */
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  /* Blog Styling */
+.blog-post {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  padding: 40px; /* Add padding around the content */
+  background-color: var(--card-bg); /* White background for content */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blog-post h2 {
+  font-size: 36px; /* Large font size for the main title */
+  text-align: center; /* Center align the title */
+  font-weight: bold; /* Bold for emphasis */
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.blog-post img {
+  width: 80%; /* Adjust the width to 80% of the container */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.category {
+  font-size: 12px; /* Smaller font size for the category */
+  color: var(--text); /* Purple color for the category label */
+  text-align: left; /* Align the category to the left */
+  margin-bottom: 10px; /* Space below the category label */
+  background-image: var(--button-gradient);
+  padding: 6px 10px;
+  border-radius: 18px;
+}
+
+.blog-content {
+  width: 80%; /* Adjust the width to 80% of the container */
+  text-align: justify; /* Justify the text for a clean look */
+  line-height: 1.6; /* Increase line-height for better readability */
+}
+
+.blog-content h3 {
+  font-size: 24px; /* Font size for the main heading */
+  font-weight: bold; /* Bold for emphasis */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 15px; /* Space below the heading */
+  color: var(--text);
+}
+
+.blog-content h4 {
+  font-size: 20px; /* Font size for subheadings */
+  text-align: left; /* Align text to the left */
+  font-weight: bold; /* Bold for emphasis */
+  margin-bottom: 10px; /* Space below the subheading */
+  color: var(--text);
+}
+
+.blog-content p {
+  font-size: 16px; /* Standard font size for body text */
+  color: #666; /* Gray color for readability */
+  text-align: justify; /* Justify text */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* Gallery Section */
+.gallery {
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery h2 {
+  color: white; /* White text for the header */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.gallery p {
+  color: #9b9b9b; /* Light grey text for the subtitle */
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Gallery Grid with a larger central image */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3-column grid */
+  grid-template-rows: repeat(4, auto); /* 3-row grid */
+  gap: 1rem; /* Space between grid items */
+}
+
+.gallery-item.large {
+  grid-column: 1 / 3; /* Spans across 2 columns */
+  grid-row: 1 / 3; /* Spans across 2 rows */
+}
+
+.gallery-item {
+  padding: 1rem;
+}
+
+.gallery-item img {
+  width: 100%; /* Make images take the full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+}
+
+
+
+
+

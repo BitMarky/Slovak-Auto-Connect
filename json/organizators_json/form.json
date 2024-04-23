@@ -1,0 +1,279 @@
+{
+    "Slovakia": {
+      "Bratislava": [
+        "Bratislava",
+        "Malacky",
+        "Pezinok",
+        "Senec"
+      ],
+      "Trnava": [
+        "Trnava",
+        "Piešťany",
+        "Hlohovec",
+        "Senica",
+        "Skalica",
+        "Dunajská Streda"
+      ],
+      "Trenčín": [
+        "Trenčín",
+        "Prievidza",
+        "Púchov",
+        "Nové Mesto nad Váhom",
+        "Ilava",
+        "Bánovce nad Bebravou"
+      ],
+      "Nitra": [
+        "Nitra",
+        "Nové Zámky",
+        "Komárno",
+        "Levice",
+        "Šaľa",
+        "Zlaté Moravce"
+      ],
+      "Žilina": [
+        "Žilina",
+        "Martin",
+        "Čadca",
+        "Ružomberok",
+        "Kysucké Nové Mesto",
+        "Dolný Kubín"
+      ],
+      "Banská Bystrica": [
+        "Banská Bystrica",
+        "Zvolen",
+        "Lučenec",
+        "Rimavská Sobota",
+        "Žiar nad Hronom",
+        "Brezno"
+      ],
+      "Prešov": [
+        "Prešov",
+        "Poprad",
+        "Humenné",
+        "Bardejov",
+        "Sabinov",
+        "Stará Ľubovňa"
+      ],
+      "Košice": [
+        "Košice",
+        "Michalovce",
+        "Spišská Nová Ves",
+        "Trebišov",
+        "Rožňava",
+        "Gelnica"
+      ]
+    },
+    "Poland": {
+      "Greater Poland": [
+        "Poznań",
+        "Kalisz",
+        "Konin",
+        "Piła",
+        "Gniezno",
+        "Leszno"
+      ],
+      "Lesser Poland": [
+        "Kraków",
+        "Tarnów",
+        "Nowy Sącz",
+        "Chrzanów",
+        "Wadowice",
+        "Bochnia"
+      ],
+      "Lower Silesia": [
+        "Wrocław",
+        "Legnica",
+        "Wałbrzych",
+        "Jelenia Góra",
+        "Lubin",
+        "Zgorzelec"
+      ],
+      "Lublin": [
+        "Lublin",
+        "Chełm",
+        "Zamość",
+        "Puławy",
+        "Świdnik",
+        "Łęczna"
+      ],
+      "Lubusz": [
+        "Zielona Góra",
+        "Gorzów Wielkopolski",
+        "Żagań",
+        "Nowa Sól",
+        "Świebodzin",
+        "Słubice"
+      ],
+      "Masovian": [
+        "Warsaw",
+        "Radom",
+        "Płock",
+        "Siedlce",
+        "Pruszków",
+        "Legionowo"
+      ],
+      "Podlaskie": [
+        "Białystok",
+        "Suwałki",
+        "Łomża",
+        "Augustów",
+        "Bielsk Podlaski",
+        "Hajnówka"
+      ],
+      "Pomeranian": [
+        "Gdańsk",
+        "Gdynia",
+        "Słupsk",
+        "Tczew",
+        "Wejherowo",
+        "Starogard Gdański"
+      ],
+      "Silesian": [
+        "Katowice",
+        "Częstochowa",
+        "Sosnowiec",
+        "Gliwice",
+        "Bytom",
+        "Zabrze"
+      ],
+      "Subcarpathian": [
+        "Rzeszów",
+        "Przemyśl",
+        "Mielec",
+        "Sanok",
+        "Krosno",
+        "Jasło"
+      ],
+      "Holy Cross": [
+        "Kielce",
+        "Starachowice",
+        "Ostrowiec Świętokrzyski",
+        "Skarżysko-Kamienna",
+        "Końskie",
+        "Jędrzejów"
+      ],
+      "Warmian-Masurian": [
+        "Olsztyn",
+        "Elbląg",
+        "Ełk",
+        "Iława",
+        "Giżycko",
+        "Mrągowo"
+      ],
+      "West Pomeranian": [
+        "Szczecin",
+        "Koszalin",
+        "Stargard",
+        "Świnoujście",
+        "Kołobrzeg",
+        "Police"
+      ]
+    },
+    "Czech Republic": {
+      "Central Bohemian": [
+        "Prague",
+        "Kladno",
+        "Mladá Boleslav",
+        "Benešov",
+        "Kolín",
+        "Kutná Hora"
+      ],
+      "South Bohemian": [
+        "České Budějovice",
+        "Tábor",
+        "Písek",
+        "Strakonice",
+        "Jindřichův Hradec",
+        "Prachatice"
+      ],
+      "Plzeň": [
+        "Plzeň",
+        "Klatovy",
+        "Domažlice",
+        "Rokycany",
+        "Tachov",
+        "Sušice"
+      ],
+      "Karlovy Vary": [
+        "Karlovy Vary",
+        "Cheb",
+        "Sokolov",
+        "Ostrov",
+        "Aš",
+        "Chodov"
+      ],
+      "Ústí nad Labem": [
+        "Ústí nad Labem",
+        "Teplice",
+        "Most",
+        "Děčín",
+        "Litoměřice",
+        "Chomutov"
+      ],
+      "Liberec": [
+        "Liberec",
+        "Jablonec nad Nisou",
+        "Česká Lípa",
+        "Turnov",
+        "Semily",
+        "Nový Bor"
+      ],
+      "Hradec Králové": [
+        "Hradec Králové",
+        "Náchod",
+        "Trutnov",
+        "Jičín",
+        "Dvur Králové nad Labem",
+        "Hořice"
+      ],
+      "Pardubice": [
+        "Pardubice",
+        "Chrudim",
+        "Svitavy",
+        "Ústí nad Orlicí",
+        "Přelouč",
+        "Litomyšl"
+      ],
+      "Vysočina": [
+        "Jihlava",
+        "Třebíč",
+        "Havlíčkův Brod",
+        "Žďár nad Sázavou",
+        "Pelhřimov",
+        "Telč"
+      ],
+      "South Moravia": [
+        "Brno",
+        "Znojmo",
+        "Blansko",
+        "Hodonín",
+        "Břeclav",
+        "Boskovice"
+      ],
+      "Olomouc": [
+        "Olomouc",
+        "Přerov",
+        "Prostějov",
+        "Šumperk",
+        "Jeseník",
+        "Zábřeh"
+      ],
+      "Moravian-Silesian": [
+        "Ostrava",
+        "Frýdek-Místek",
+        "Karviná",
+        "Opava",
+        "Třinec",
+        "Bohumín"
+      ],
+      "Zlín": [
+        "Zlín",
+        "Vsetín",
+        "Kroměříž",
+        "Uherské Hradiště",
+        "Holešov",
+        "Valašské Meziříčí"
+      ]
+    }
+  }
+  
