@@ -1,0 +1,98 @@
+{
+    "Luxury": {
+      "BMW": {
+        "3 Series": "BMW 3 Series is a compact executive car.",
+        "5 Series": "BMW 5 Series is a mid-size executive car.",
+        "7 Series": "BMW 7 Series is a full-size luxury sedan.",
+        "X5": "BMW X5 is a mid-size luxury SUV.",
+        "X7": "BMW X7 is a full-size luxury SUV."
+      },
+      "Mercedes-Benz": {
+        "C-Class": "Mercedes-Benz C-Class is a compact executive car.",
+        "E-Class": "Mercedes-Benz E-Class is an executive car.",
+        "S-Class": "Mercedes-Benz S-Class is a full-size luxury sedan.",
+        "GLE": "Mercedes-Benz GLE is a mid-size luxury SUV.",
+        "GLS": "Mercedes-Benz GLS is a full-size luxury SUV."
+      },
+      "Lexus": {
+        "ES": "Lexus ES is a mid-size luxury sedan.",
+        "GS": "Lexus GS is an executive car.",
+        "LS": "Lexus LS is a full-size luxury sedan.",
+        "RX": "Lexus RX is a mid-size luxury SUV.",
+        "NX": "Lexus NX is a compact luxury crossover SUV."
+      },
+      "Audi": {
+        "A3": "Audi A3 is a small family or compact executive car.",
+        "A4": "Audi A4 is a compact executive car.",
+        "A6": "Audi A6 is an executive car.",
+        "Q5": "Audi Q5 is a compact luxury crossover SUV.",
+        "Q7": "Audi Q7 is a full-size luxury SUV."
+      }
+    },
+    "Off-road": {
+      "Jeep": {
+        "Wrangler": "Jeep Wrangler is a compact and mid-size four-wheel drive off-road and sport utility vehicle.",
+        "Cherokee": "Jeep Cherokee is a line of compact and mid-size SUVs.",
+        "Grand Cherokee": "Jeep Grand Cherokee is a mid-size SUV produced by the American manufacturer Jeep."
+      },
+      "Land Rover": {
+        "Discovery": "Land Rover Discovery is a series of mid-size luxury SUVs.",
+        "Range Rover": "Land Rover Range Rover is a luxury SUV.",
+        "Defender": "Land Rover Defender is a model of off-road vehicle produced under this name by the British manufacturer."
+      },
+      "Toyota": {
+        "Land Cruiser": "Toyota Land Cruiser is a series of four-wheel drive vehicles produced by the Japanese automobile manufacturer Toyota.",
+        "4Runner": "Toyota 4Runner is a compact, later mid-size SUV.",
+        "Tacoma": "Toyota Tacoma is a pickup truck manufactured in the U.S. by the Japanese automobile manufacturer Toyota."
+      },
+      "Ford": {
+        "Bronco": "Ford Bronco is a model line of sport utility vehicles manufactured and marketed by Ford.",
+        "Explorer": "Ford Explorer is a range of SUVs manufactured by Ford Motor Company.",
+        "Ranger": "Ford Ranger is a range of pickup trucks manufactured and marketed by Ford in North and South America."
+      }
+    },
+    "Muscle": {
+      "Ford": {
+        "Mustang": "Ford Mustang is an American car manufactured by Ford.",
+        "GT": "Ford GT is a mid-engine two-seater sports car.",
+        "Shelby GT500": "Shelby GT500 is a high-performance variant of the Ford Mustang."
+      },
+      "Chevrolet": {
+        "Camaro": "Chevrolet Camaro is a mid-size American automobile manufactured by Chevrolet.",
+        "Corvette": "Chevrolet Corvette is a line of two-door, two-passenger sports cars.",
+        "Chevelle": "Chevrolet Chevelle is a mid-sized automobile which was produced by Chevrolet."
+      },
+      "Dodge": {
+        "Challenger": "Dodge Challenger is the name of three different generations of automobiles.",
+        "Charger": "Dodge Charger is a model of automobile marketed by Dodge.",
+        "Viper": "Dodge Viper is a sports car manufactured by Dodge."
+      },
+      "Pontiac": {
+        "GTO": "Pontiac GTO is an American automobile manufactured by Pontiac.",
+        "Firebird": "Pontiac Firebird is an American automobile built by Pontiac from the 1967 to the 2002 model years."
+      }
+    },
+    "Sport": {
+      "Ferrari": {
+        "488 GTB": "Ferrari 488 GTB is a mid-engine sports car produced by the Italian automobile manufacturer Ferrari.",
+        "812 Superfast": "Ferrari 812 Superfast is a grand tourer produced by Italian automobile manufacturer Ferrari.",
+        "SF90 Stradale": "Ferrari SF90 Stradale is a mid-engine PHEV (Plug-in Hybrid electric vehicle) sports car."
+      },
+      "Porsche": {
+        "911": "Porsche 911 is a two-door, 2+2 high performance rear-engined sports car.",
+        "Cayman": "Porsche Cayman is a rear mid-engine, rear-wheel-drive 2-door 2-passenger high performance sports car.",
+        "Panamera": "Porsche Panamera is a full-sized luxury vehicle (F-segment in Europe) manufactured by the German automobile manufacturer Porsche."
+      },
+      "Lamborghini": {
+        "Aventador": "Lamborghini Aventador is a mid-engine sports car produced by the Italian automotive manufacturer Lamborghini.",
+        "Huracan": "Lamborghini Huracan is a sports car manufactured by Italian automotive manufacturer Lamborghini.",
+        "Urus": "Lamborghini Urus is a high-performance SUV manufactured by Italian automobile manufacturer Lamborghini."
+      },
+      "McLaren": {
+        "570S": "McLaren 570S is a sports car designed and manufactured by British car manufacturer McLaren Automotive.",
+        "720S": "McLaren 720S is a sports car designed and manufactured by British automobile manufacturer McLaren Automotive.",
+        "GT": "McLaren GT is a sports car manufactured by McLaren Automotive."
+      }
+    }
+  }
+  

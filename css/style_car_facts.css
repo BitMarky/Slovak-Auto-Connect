@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  --background: #1A191DFF;
+  --primary: #6D31ED;  /* Neon pink */
+  --secondary: #00a8ff;
+  --button-gradient: linear-gradient(to right top,#15abff, #6d31ed);
+  --hover: #7b42f6;
+  --text: #ffffff;
+  --text-dark: #222026ff;
+  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+
+header {
+    background-color: var(--background);
+    height: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+}
+
+
+.logo {
+    padding: 10px;
+}
+
+.logo-img {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text);
+    border-radius: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+
+nav ul li a:hover {
+    color: var(--hover); /* Light Gray */
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active {
+    color: var(--primary);
+    
+    
+  }
+
+  
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+
+.stroke ul li a {
+    position: relative;
+  }
+.stroke ul li a:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%; /* Show full width */
+    content: '.';
+    color: transparent;
+    background: var(--primary);
+    height: 1px;
+  }
+.stroke ul li a:hover:after {
+    width: 100%;
+  }
+
+.stroke ul li a:hover:after {
+    width: 100%;
+  }
+.center-nav {
+    padding: 0px 5px 2px 5px;
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text);
+    border-radius: 50px;
+}
+
+.hero {
+    background-image: url('/img/carfacts/merq.jpeg');
+    height: 512px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text);
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+
+.something,
+.something2,
+.something4{
+    display: block;
+    color: var(--text);
+    text-align: center;
+    
+
+}
+.something-container {
+    text-align: center;
+    color: var(--text);
+    text-align: center;
+    padding: 25px 200px 25px 200px;
+}
+
+.something-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.something-container p {
+    font-size: 18px;
+}
+
+.card-type{
+    outline:5px #6D31ED solid;
+    display: flexbox;
+}
+
+.something2 h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.card{
+    width: 325px;
+    background-color: gray;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 10px;
+
+}
+
+.card img{
+    width: 100%;
+    height: auto ;
+    
+}
+
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #7b42f6;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+.something3 {  
+    width: 100%; 
+    margin-top: 50px;
+}
+.something3-container{
+    background: #222026FF;
+    
+}
+
+.something3-container h4{
+    font-family: Lexend; 
+    font-size: 52px; 
+    line-height: 74px; 
+    font-weight: 700; 
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.something3-container p{
+    font-family: Manrope; 
+    font-size: 14px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #FFF; 
+    margin-left: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+.textbox {
+    text-align: center;
+    color: lightgray;
+}
+.textbox p{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.textbox label{
+    display: block;
+    margin: auto; 
+    width: 300px; 
+}
+.textbox select,
+.textbox input {
+    display: block;
+    margin: auto; 
+    width: 300px; 
+    height: 50px;
+    border-radius: 8px;
+}
+  .something4-container p{
+    text-align: center;
+    color: var(--text);
+    text-align: center;
+    padding: 25px 200px 25px 200px;
+    height: 100%;
+}
+.background-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/carfacts/maybach.jpg");
+    background-position: center; 
+    z-index: -1; 
+    opacity: 0.2;
+}
+.background-image2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/carfacts/mercedes\ G.jpg");
+    background-position: center; 
+    z-index: -1; 
+    opacity: 0.2;
+}
+.background-image3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/carfacts/muscle.jpg");
+    background-position: center; 
+    z-index: -1; 
+    opacity: 0.2;
+}
+.background-image4{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/carfacts/black.jpg");
+    background-position: center; 
+    z-index: -1; 
+    opacity: 0.2;
+}
+.p1_something{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.p1_container{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text);
+}
+ .p1_container h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.p1-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: gray;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px  gold;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.p1-card img{
+    width: 325px;
+    height: auto;
+    border-radius: 8px;
+}
+.car_info{
+    width: 100%;
+}
+
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 10px;
+  }
