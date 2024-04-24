@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  --background: #1A191DFF;
+  --primary: #6D31ED;  /* Neon pink */
+  --secondary: #00a8ff;
+  --button-gradient: linear-gradient(to right top,#15abff, #6d31ed);
+  --hover: #7b42f6;
+  --text: #ffffff;
+  --text-dark: #222026ff;
+  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Hero Section Styles */
+
+.hero {
+    background-image: url('/img/homepage/backgound-homepage.png');
+    height: 512px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text);
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--secondary);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+.cta-button:hover {
+    background: var(--button-gradient);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+/* About Section Styles */
+
+.about {
+    display: block;
+    color: var(--text);
+    text-align: center;
+    
+
+}
+.about-container {
+    text-align: center;
+    color: var(--text);
+    text-align: center;
+    padding: 25px 200px 25px 200px;
+}
+
+.about-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 18px;
+}
+
+/*Main content styles*/
+
+.main-content {
+    padding: 100px 0;
+    color: var(--text);
+}
+
+.main-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+}
+
+section.featured-locations {
+    padding: 20px 0;
+    color: var(--text);
+    text-align: center;
+}
+
+section.featured-locations h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section.featured-locations p {
+    font-size: 18px;
+}
+
+
+.featured-locations-cards img {
+    width: 300px;
+    height: 300px;
+}
+
+.featured-locations-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    padding: 50px 0;
+    color: var(--text);
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    max-width: 100%;
+    background-color: var(--primary);
+    box-shadow: 0 5px 10px #1a4470;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.location-img {
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.location-info {
+    padding: 5px;
+    
+}
+
+.location-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: var(--secondary);
+    color: var(--text);
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+
+
+
+
+

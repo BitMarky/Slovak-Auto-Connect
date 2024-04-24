@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rally Event Registration</title>
+    <link rel="stylesheet" href="css/style_racing_events.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="registrationForm" onsubmit="return validateForm();">
+            <h2>Rally Event Registration</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <div id="nameError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+                <div id="surnameError" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <div class="radiocontainer">
+                    <label for="genderMale" class="radiolabel">Male</label>
+                    <input class="selector" id="genderMale" name="gender" type="radio" value="male">
+                    <label for="genderFemale" class="radiolabel">Female</label>
+                    <input class="selector" id="genderFemale" name="gender" type="radio" value="female">
+                    <label for="genderOther" class="radiolabel">Other</label>
+                    <input class="selector" id="genderOther" name="gender" type="radio" value="other">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="carClass">Car Class:</label>
+                <select id="carClass" name="carClass" >
+                    <option value="">Select Car Class</option>
+                    <option value="class1">Class 1</option>
+                    <option value="class2">Class 2</option>
+                    <option value="class3">Class 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="skillLevel">Skill Level:</label>
+                <select id="skillLevel" name="skillLevel" >
+                    <option value="">Select Skill Level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="acceptRules" name="acceptRules" >
+                <label for="acceptRules">I accept the rules</label>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+  function validateForm() {
+    var name = document.getElementById('name').value;
+    var surname = document.getElementById('surname').value;
+    var name = document.getElementById('name').value;
+    var surname = document.getElementById('surname').value;
+    var gender = document.querySelector('input[name="gender"]:checked');
+    var carClass = document.getElementById('carClass').value;
+    var skillLevel = document.getElementById('skillLevel').value;
+    var acceptRules = document.getElementById('acceptRules').checked;
+
+    document.getElementById('nameError').innerHTML = '';
+    document.getElementById('surnameError').innerHTML = '';
+
+    var errors = false;
+
+    if (name.trim().length < 3) {
+        document.getElementById('nameError').innerHTML = 'Name is too short.';
+        errors = true;
+    }
+
+    if (surname.trim().length < 3) {
+        document.getElementById('surnameError').innerHTML = 'Surname is too short.';
+        errors = true;
+    }
+
+    return !errors;
+}
+
+
+    </script>
+</body>
+</html>
+
