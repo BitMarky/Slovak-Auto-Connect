@@ -40,14 +40,14 @@ footer {
 
 .footer-links a , .footer-links2 a {
     text-decoration: none;
-    color: rgb(18, 18, 18);
+    color: rgb(131, 131, 131);
     font-size: 16px;
 
 
 }
 .footer-links a:hover , .footer-links2 a:hover {
     text-decoration: underline;
-    color: rgb(69, 69, 69);
+    color: rgb(78, 78, 78);
     transition: 0.3s ease;
 
 }
