@@ -796,7 +796,7 @@ button:hover {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px; /* Adds space between the radio buttons */
+    gap: 10px; 
 }
 
 .radiocontainer input {
@@ -804,10 +804,10 @@ button:hover {
 }
 
 .radiocontainer label {
-    width: auto; /* Adjusted to auto to prevent distortion */
+    width: auto; 
 }
 
-/* Fix for the "I accept the rules" checkbox */
+
 input[type="checkbox"] {
     vertical-align: middle;
     position: relative;
