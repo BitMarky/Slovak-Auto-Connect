@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cardWidth = 300; // Width of a single card
     const cardSpacing = 10; // Spacing between cards
 
+    // Navigation buttons and container
     const prevButton = document.querySelector('.nav-button.prev');
     const nextButton = document.querySelector('.nav-button.next');
     const cardsContainer = document.querySelector('.cards-container');
@@ -12,26 +13,26 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
-    let currentOffset = 0; // Tracks the current position
+    let currentOffset = 0; // Current position of slider
 
-    const slideWidth = cardsToMove * (cardWidth + cardSpacing); // Width to slide by
+    const slideWidth = cardsToMove * (cardWidth + cardSpacing); // Distance to slide
     const totalCards = document.querySelectorAll('.card').length; // Total number of cards
-    const visibleWidth = 950; // Width of the visible area of the cards container
+    const visibleWidth = 950; // Width of the visible area
     const totalWidth = totalCards * (cardWidth + cardSpacing); // Total width of all cards
 
     nextButton.addEventListener('click', () => {
         if (currentOffset < totalWidth - visibleWidth) {
-            currentOffset += slideWidth; // Move by 3 cards
-            currentOffset = Math.min(currentOffset, totalWidth - visibleWidth); // Ensure we don't go past the end
-            cardsContainer.style.transform = `translateX(-${currentOffset}px)`; // Apply the new position
+            currentOffset += slideWidth;
+            currentOffset = Math.min(currentOffset, totalWidth - visibleWidth);
+            cardsContainer.style.transform = `translateX(-${currentOffset}px)`;
         }
     });
 
     prevButton.addEventListener('click', () => {
         if (currentOffset > 0) {
-            currentOffset -= slideWidth; // Move back by 3 cards
-            currentOffset = Math.max(currentOffset, 0); // Ensure we don't go before the start
-            cardsContainer.style.transform = `translateX(-${currentOffset}px)`; // Apply the new position
+            currentOffset -= slideWidth;
+            currentOffset = Math.max(currentOffset, 0);
+            cardsContainer.style.transform = `translateX(-${currentOffset}px)`;
         }
     });
 });

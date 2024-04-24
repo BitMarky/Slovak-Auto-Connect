@@ -58,7 +58,7 @@
     justify-content: center; /* Horizontally center the list items */
     align-items: center; /* Vertically align the items if needed */
     padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     text-align: center;
 }
 
@@ -76,7 +76,7 @@ nav ul li a {
     position: relative; /* Needed to position the pseudo-element correctly */
     display: inline-block; /* Ensures the pseudo-element aligns neatly under the link */
     padding-bottom: 5px;
-    overflow: hidden; /* Ensures the underline does not extend outside the element */
+    overflow: hidden; 
 }
 
 nav ul li a::after {
@@ -87,9 +87,9 @@ nav ul li a::after {
     right: 50%;
     width: 0; /* Start with no width */
     height: 3px; /* Height of the underline */
-    background-color: var(--hover); /* Color of the underline */
-    border-radius: 3px; /* Rounds the corners of the pseudo border */
-    transition: all 0.3s ease; /* Smooth transition for all changes */
+    background-color: var(--hover); 
+    border-radius: 3px; 
+    transition: all 0.3s ease; 
 }
 
 nav ul li a:hover::after {
@@ -172,7 +172,7 @@ nav ul li a.active {
 
 /* Styles for the hero image */
 .hero-content .hero-image {
-    /* Existing styles... */
+    
     border-radius: 8px;
     display: block;
     margin: 0 auto 30px; /* Adds margin below the image */
